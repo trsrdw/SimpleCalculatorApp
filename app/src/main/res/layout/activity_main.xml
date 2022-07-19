@@ -138,21 +138,22 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
+        <!--<Button
             style="@style/buttonNumber"
-            android:text="⁺/−"
-            android:onClick="plusMinusAction"/>
-
-        <Button
-            style="@style/buttonNumber"
-            android:text="0"/>
+            android:text="±"
+            android:onClick="plusMinusAction"/>-->
 
         <Button
             style="@style/buttonNumber"
             android:text="."/>
 
         <Button
+            style="@style/buttonNumber"
+            android:text="0"/>
+
+        <Button
             style="@style/buttonOperator"
+            android:layout_weight="2"
             android:backgroundTint="@color/primaryAccent"
             android:text="="
             android:onClick="equalsAction"/>

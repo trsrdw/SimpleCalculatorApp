@@ -23,15 +23,16 @@ class MainActivity : AppCompatActivity() {
         if (view is Button) {
 
             if (view.text == ".") {
-                if (canAddDecimal) {
+                if (canAddDecimal){
                     binding.workings.append(view.text)
                 }
                 canAddDecimal = false
             } else {
                 binding.workings.append(view.text)
+                canAddOperation = true
+                canAddDecimal = true
             }
 
-            canAddOperation = true
         }
     }
 
